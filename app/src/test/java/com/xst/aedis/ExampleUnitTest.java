@@ -1,0 +1,21 @@
+package com.xst.aedis;
+
+import org.junit.Test;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() {
+        try {
+            int port = 9000;
+            SocketService nioServer = new SocketService(port);
+            nioServer.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
